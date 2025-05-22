@@ -1,0 +1,24 @@
+GET http://localhost:5000/favorites
+
+###
+GET http://localhost:5000/favorites/2
+
+###
+POST http://localhost:5000/favorites
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "productId": 3
+}
+
+
+###
+DELETE http://localhost:5000/favorites
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "productId": 2
+}
+

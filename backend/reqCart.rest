@@ -1,0 +1,40 @@
+# menampilkan data pada cart berdasarkan id user
+GET http://localhost:5000/cart/3
+
+###
+POST http://localhost:5000/cart
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "productId": 4,
+    "quantity": 2
+}
+
+
+###
+# update jumlah barang berdasarkan cart id
+PATCH http://localhost:5000/cart/1
+Content-Type: application/json
+
+{
+    "quantity": 3
+}
+
+
+###
+# untuk menghapus item tertentu dari keranjang (berdasarkan id cart)
+DELETE http://localhost:5000/cart/5
+
+###
+# untuk menghapus item dari keranjang berdasarkan id user
+DELETE http://localhost:5000/cart/user/1
+
+###
+# pilih user id yang ingin di checkout productnya
+POST http://localhost:5000/cart/checkout
+Content-Type: application/json
+
+{
+    "userId": 3
+}

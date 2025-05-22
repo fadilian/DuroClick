@@ -1,0 +1,28 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/4
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "categoryId": 3,
+    "name": "Cimory Fresh Milk",
+    "price": 8000,
+    "stock": 10
+}
+
+###
+PATCH http://localhost:5000/products/4
+Content-Type: application/json
+
+{
+    "name": "Cimory Fresh Milk",
+    "price": 8500,
+    "stock": 10
+}
+
+###
+DELETE   http://localhost:5000/products/1

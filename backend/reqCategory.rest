@@ -1,0 +1,25 @@
+GET http://localhost:5000/categories
+
+###
+GET http://localhost:5000/categories/1
+
+###
+POST http://localhost:5000/categories
+Content-Type: application/json
+
+{
+    "name": "Minuman"
+}
+
+
+###
+PATCH http://localhost:5000/categories/1
+Content-Type: application/json
+
+{
+    "name": "Makanan Ringan"
+}
+
+
+###
+DELETE   http://localhost:5000/categories/1

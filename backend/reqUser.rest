@@ -1,0 +1,54 @@
+GET http://localhost:5000/user
+
+###
+GET http://localhost:5000/user/1
+
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name": "Fadil",
+    "email": "fadil@gmail.com",
+    "gender": "Male",
+    "telp": "087701514226",
+    "address": "Jl.Arjuno, Sukorejo",
+    "password": "12345",
+    "level": "member"
+}
+
+###
+PATCH  http://localhost:5000/user/1
+Content-Type: application/json
+
+{
+    "name": "Shalma",
+    "email": "shalma@gmail.com",
+    "gender": "Female",
+    "telp": "088785438457"
+}
+
+###
+DELETE   http://localhost:5000/user/1
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "Shalma",
+    "email": "shalma@gmail.com",
+    "gender": "Female",
+    "telp": "08123456789",
+    "address": "Jl.Mangga, Kauman",
+    "password": "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "shalma@gmail.com",
+    "password": "12345"
+}

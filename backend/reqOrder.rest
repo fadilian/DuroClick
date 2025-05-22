@@ -1,0 +1,6 @@
+# Menampilkan semua transaksi yang pernah dilakukan oleh pengguna berdasarkan userId
+GET http://localhost:5000/orders?userId=3
+
+###
+# Menampilkan semua produk yang dipesan dalam sebuah transaksi tertentu (berdasarkan order id)
+GET http://localhost:5000/orders/2
