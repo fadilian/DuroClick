@@ -1,2 +1,2 @@
 # DuroClick
-Backend aplikasi warung online
+Backend aplikasi toko online madura
